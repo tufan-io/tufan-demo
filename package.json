@@ -1,0 +1,31 @@
+{
+  "name": "tufan-demo",
+  "version": "1.0.0",
+  "description": "demo scripts for tufan-cli",
+  "main": "index.js",
+  "files": [
+    "demo"
+  ],
+  "scripts": {
+    "postinstall": "which tufan",
+    "provider-author-workflow": "run-script-os",
+    "system-architect-workflow": "run-script-os",
+    "teardown-workflow": "run-script-os",
+    "provider-author-workflow:win32": ".\\demo\\win\\provider-author.bat",
+    "provider-author-workflow:darwin": "./demo/nix/provider-author",
+    "provider-author-workflow:nix": "./demo/nix/provider-author",
+    "system-architect-workflow:win32": ".\\demo\\win\\system-architect.bat",
+    "system-architect-workflow:darwin": "./demo/nix/system-architect",
+    "system-architect-workflow:nix": "./demo/nix/system-architect",
+    "teardown-workflow:win32": ".\\demo\\win\\teardown.bat",
+    "teardown-workflow:darwin": "./demo/nix/teardown",
+    "teardown-workflow:nix": "./demo/nix/teardown"
+  },
+  "keywords": [],
+  "author": "tufan.io",
+  "license": "ISC",
+  "dependencies": {
+    "run-script-os": "^1.1.1",
+    "which": "^2.0.2"
+  }
+}
